@@ -37,22 +37,25 @@
 //
 //add2numbers(2,3,4,5);
 
-//arrow functions are great for sending functions around as parameters and using shortcut notation
-//
+//ARROW FUNCTIONS
+//are great for sending functions around as parameters and using shortcut notation
+//they are anonymous functions
+ 
+// FORMAT:
 //(para1,para2) =>  console.log(para1+para2)
 //() => console.log("hello");
 //para => console.log(para);
 //(para1,para2) =>  {multiple statements
 //};
 
-
-
 //let arrow = (x,y) => console.log(x+y);
 //arrow(7,5)
 
-
+//arrow function as an arguemnt:
 //const arr  = ["apple","banana","pineapple"];
 //arr.forEach (x => console.log(x));
+
+//SPREAD OPERATOR "..." :
 
 //let spread = ["so","much","fun"];
 //let message = ["js",'is',...spread,'and','very','powerful'];
@@ -61,15 +64,41 @@
 //console.log(message)
 //console.log(...message)
 
-//function add2numbers(x,y,z,m){
-//  console.log(x+y+z+m);
-//let a = [1,2]
-//let b = [3,4]
-//let c = [...a,...b]
-//add2numbers(c)
+// function add2numbers(x, y, z, m) {
+//     console.log(x + y + z + m);
+//   }
+//   let a = [1, 2];
+//   let b = [3, 4];
+//   let c = [...a, ...b];
+//   add2numbers(...c);  
+  
 //rest operator
 
-function someFunction(para1,...para2){
- console.log(para1,para2);
-}
-someFunction("hi","hello",'Apple')
+// function someFunction(para1,...para2){
+//  console.log(para1,para2);
+// }
+// someFunction("hi","hello","how","are","you")
+
+// function add2numbers(x,y){
+//     console.log(x+y);
+// }
+
+// let a = add2numbers(1,2);
+// console.log(a);  
+
+// let arr = (x,y) => console.log(x+y)
+// console.log(arr(1,2))
+// function add2numbers(x,y){
+//     return x+y;
+// }
+
+// let resArr = [];
+// for(let i = 0; i < 10; i++){
+//     let result = add2numbers(i,i*2);
+//     resArr.push(result);
+     
+// }
+// console.log(resArr);
+
+let add2numbers = (x,y) => x+y;
+ 
