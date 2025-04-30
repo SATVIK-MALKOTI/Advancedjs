@@ -153,7 +153,7 @@
 /* 
 1. git init
 2. git add . 
-3. git commit -m
+3. git commit -m "msg" 
 4. git push -u
 */
 
@@ -191,28 +191,28 @@
 
                                                 //PROTOTYPES
 //mechanism by which objects can inherit features from one another
-class Person{
-    constructor(firstname,secondname){
-        this.firstname = firstname;
-        this.secondname = secondname;
-    }
-    greet(){
-        console.log("HI there");
-    }
-}
+// class Person{
+//     constructor(firstname,secondname){
+//         this.firstname = firstname;
+//         this.secondname = secondname;
+//     }
+//     greet(){
+//         console.log("HI there");
+//     }
+// }
 
-//using prototype to add a method to the Person class
+// //using prototype to add a method to the Person class
 
-Person.prototype.newmethod = function(){
-    console.log('hi ' + this.firstname + " " + this.secondname);
-}
-Person.prototype.favcolor = 'blue'; 
-//adding a property to the Person class
+// Person.prototype.newmethod = function(){
+//     console.log('hi ' + this.firstname + " " + this.secondname);
+// }
+// Person.prototype.favcolor = 'blue'; 
+// //adding a property to the Person class
 
-let object = new Person('john','doe');
-object.greet(); //HI there
-object.newmethod(); //hi john doe
-console.log(object.favcolor); //blue
+// let object = new Person('john','doe');
+// object.greet(); //HI there
+// object.newmethod(); //hi john doe
+// console.log(object.favcolor); //blue
 
 
 
